@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+<div class="container">
+    <h2>Register</h2>
+    <form id="registrationForm">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter Name">
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter Email">
+        </div>
+
+        <div class="form-group">
+            <label>Course</label>
+            <select id="course">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+        </div>
+
+        <div class="radio-group">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" > Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="message"></div>
+    
+    <div id="displayData">
+        <h3>Submitted Details:</h3>
+        <p id="resName"></p>
+        <p id="resEmail"></p>
+        <p id="resCourse"></p>
+        <p id="resGender"></p>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
